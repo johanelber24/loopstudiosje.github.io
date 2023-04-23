@@ -1,0 +1,72 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about {
+    padding-top: 100px;
+
+    @include m.tablet {
+        padding-top: 150px;
+    }
+}
+
+.about__container {
+    position: relative;
+}
+
+.about__img--mobile {
+    margin: 0 auto;
+
+    @include m.desktop {
+        margin: initial;
+    }
+}
+
+.about__info {
+    background-color: v.$white;
+    text-align: center;
+    margin-top: 40px;
+
+    @include m.desktop {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        padding: 100px 0 0 100px;  
+        margin-top: 0;  
+    }
+
+    .about__info__heading {
+        font-family: v.$fontJosefin;
+        font-size: 32px;
+        text-transform: uppercase;
+        line-height: 1;
+        font-weight: 300;
+        margin-bottom: 25px;;
+        
+        @include m.mobile {
+            font-size: 40px;
+        }
+
+        @include m.tablet {
+            font-size: 44px;
+        }
+
+        @include m.desktop {
+            font-size: 48px;
+        }
+    }
+    .about__info__description {
+        color: v.$darkGray;
+        line-height: 1.6;
+        padding: 0 15px;
+        @include m.tablet {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        @include m.desktop {
+            max-width: 100%;
+            margin: initial;
+            padding: 0 10px 0 0;
+        }
+    }
+}

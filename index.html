@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Johan Elber">
+  <meta name="description" content="Project Loopstudios Landing Page">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="stylesheet" href="./build/css/app.css">
+</head>
+<body>
+
+  <!-- HEADER HERO -->
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__nav">
+        <a href="index.html" class="logo">
+          <img src="./images/logo.svg" alt="logo page"  class="logo__img">
+        </a>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#carrers">Carrers</a></li>
+            <li class="nav__item"><a class="nav__link" href="#events">Events</a></li>
+            <li class="nav__item"><a class="nav__link" href="#products">Products</a></li>
+            <li class="nav__item"><a class="nav__link" href="#support">Support</a></li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </div>
+      <div class="header__title">
+        <h1 class="header__heading">Immersive experiences that deliver</h1>
+      </div>
+    </div>
+    <!-- NAV RESPONSIVE -->
+    <div class="nav__responsive">
+      <div class="container">
+          <ul class="nav__responsive__links">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#carrers">Carrers</a></li>
+            <li class="nav__item"><a class="nav__link" href="#events">Events</a></li>
+            <li class="nav__item"><a class="nav__link" href="#products">Products</a></li>
+            <li class="nav__item"><a class="nav__link" href="#support">Support</a></li>
+          </ul>
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER HERO -->
+
+
+  <!-- MAIN CONTENT -->
+  <main class="container-master">
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="about__container container">
+        <div class="about__img">
+          <picture>
+            <source media="(min-width: 575px)" srcset="./images/desktop/image-interactive.jpg">
+            <source media="(min-width: 375px)" srcset="./images/mobile/image-interactive.jpg">
+            <img src="./images/mobile/image-interactive.jpg" alt="man in virtual reality" class="about__img--mobile">
+          </picture>
+        </div>
+        <div class="about__info">
+          <h2 class="about__info__heading">The leader in interactive vr</h2>
+          <p class="about__info__description">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT SECTION -->
+
+    <!-- CREATIONS SECTION -->
+    <section class="creations">
+      <div class="creations__container container">
+        <div class="creations__title">
+          <h2 class="creations__heading">Our Creations</h2>
+          <a href="#" class="btn btn__creations">See all</a>
+        </div>
+        <div class="creations__grid">
+          <div class="creation">
+            <div class="creation__img">
+              <picture>
+                <source media="(min-width: 540px)" srcset="./images/desktop/image-deep-earth.jpg">
+                <source media="(min-width: 375px)" srcset="./images/mobile/image-deep-earth.jpg">
+                <img src="./images/mobile/image-deep-earth.jpg" alt="deep earth">
+              </picture>
+            </div>
+            <h3 class="creation__text">Deep <br> earth</h3>
+          </div> <!-- CREATION  -->
+          <div class="creation">
+            <div class="creation__img">
+              <picture>
+                <source media="(min-width: 540px)" srcset="./images/desktop/image-night-arcade.jpg">
+                <source media="(min-width: 375px)" srcset="./images/mobile/image-night-arcade.jpg">
+                <img src="./images/mobile/image-night-arcade.jpg" alt="night arcade">
+              </picture>
+            </div>
+            <h3 class="creation__text">Night <br> arcade</h3>
+          </div> <!-- CREATION  -->
+          <div class="creation">
+            <div class="creation__img">
+              <picture>
+                <source media="(min-width: 540px)" srcset="./images/desktop/image-soccer-team.jpg">
+                <source media="(min-width: 375px)" srcset="./images/mobile/image-soccer-team.jpg">
+                <img src="./images/mobile/image-soccer-team.jpg" alt="soccer team vr">
+              </picture>
+            </div>
+            <h3 class="creation__text">Soccer <br> team vr</h3>
+          </div> <!-- CREATION  -->
+          <div class="creation">
+            <div class="creation__img">
+              <picture>
+                <source media="(min-width: 540px)" srcset="./images/desktop/image-grid.jpg">
+                <source media="(min-width: 375px)" srcset="./images/mobile/image-grid.jpg">
+                <img src="./images/mobile/image-grid.jpg" alt="grid">
+              </picture>
+            </div>
+            <h3 class="creation__text">The <br> grid</h3>
+          </div> <!-- CREATION  -->
+          <div class="creation">
+            <div class="creation__img">
+              <picture>
+                <source media="(min-width: 540px)" srcset="./images/desktop/image-from-above.jpg">
+                <source media="(min-width: 375px)" srcset="./images/mobile/image-from-above.jpg">
+                <img src="./images/mobile/image-from-above.jpg" alt="from above">
+              </picture>
+            </div>
+            <h3 class="creation__text">From up <br> above vr</h3>
+          </div> <!-- CREATION  -->
+          <div class="creation">
+            <div class="creation__img">
+              <picture>
+                <source media="(min-width: 540px)" srcset="./images/desktop/image-pocket-borealis.jpg">
+                <source media="(min-width: 375px)" srcset="./images/mobile/image-pocket-borealis.jpg">
+                <img src="./images/mobile/image-pocket-borealis.jpg" alt="pocket borealis">
+              </picture>
+            </div>
+            <h3 class="creation__text">Pocket <br> borealis</h3>
+          </div> <!-- CREATION  -->
+          <div class="creation">
+            <div class="creation__img">
+              <picture>
+                <source media="(min-width: 540px)" srcset="./images/desktop/image-curiosity.jpg">
+                <source media="(min-width: 375px)" srcset="./images/mobile/image-curiosity.jpg">
+                <img src="./images/mobile/image-curiosity.jpg" alt="curiosity">
+              </picture>
+            </div>
+            <h3 class="creation__text">The <br> curiosity</h3>
+          </div> <!-- CREATION  -->
+          <div class="creation">
+            <div class="creation__img">
+              <picture>
+                <source media="(min-width: 540px)" srcset="./images/desktop/image-fisheye.jpg">
+                <source media="(min-width: 375px)" srcset="./images/mobile/image-fisheye.jpg">
+                <img src="./images/mobile/image-fisheye.jpg" alt="fisheye">
+              </picture>
+            </div>
+            <h3 class="creation__text">Make It <br> Fisheye</h3>
+          </div> <!-- CREATION  -->
+        </div> <!-- CREATION GRID -->
+        <div class="creations__btn__mobile">
+          <a href="#" class="btn btn__creations--mobile">See all</a>
+        </div>
+      </div>
+    </section>
+    <!-- END CREATIONS SECTION -->
+
+  </main>
+  <!-- END MAIN CONTENT -->
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__left">
+        <a href="index.html" class="logo">
+          <img src="./images/logo.svg" alt="logo page" class="logo__img">
+        </a>
+        <nav class="nav">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#carrers">Carrers</a>
+          <a class="nav__link" href="#events">Events</a>
+          <a class="nav__link" href="#products">Products</a>
+          <a class="nav__link" href="#support">Support</a>
+        </nav>
+      </div>
+      <div class="footer__right">
+        <ul class="social">
+          <li class="social__item"><a class="social__link" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li class="social__item"><a class="social__link" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="social__item"><a class="social__link" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+          <li class="social__item"><a class="social__link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <p class="allright">&copy; <span id="allrightYear"></span> Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+  <!-- SCRIPT APP -->
+  <script src="./js/app.js"></script>
+</body>
+</html>

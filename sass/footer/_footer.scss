@@ -1,0 +1,104 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    background-color: v.$black;
+    color: v.$white;
+    padding: 40px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80px;
+    }
+}
+
+.footer__left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include m.tablet {
+        justify-content: space-between;
+        align-items: initial;
+    }
+
+    .logo__img {
+        max-width: 140px;
+    }
+        
+}
+
+.footer__right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    @include m.tablet {
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .social {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        .social__item {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+        }
+
+        .social__link {
+            position: relative;
+            display: inline-block;
+            padding: 0 0 5px 0;
+
+            i {
+                color: v.$white;
+                font-size: 30px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 50%;
+                background-color: v.$white;
+                width: 0%;
+                height: 2px;
+                -o-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -webkittransition: all 300ms ease;
+                transition: all 300ms ease;
+            }
+
+            &:hover::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    .allright {
+        color: v.$darkGray;
+        text-align: center;
+    }
+}

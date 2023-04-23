@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    position: relative;
+    height: 100vh;
+    padding: 40px 0;
+    background-image: url(../../images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+
+        @include m.tablet {
+            background-color: rgba(0, 0, 0, .4);
+        }
+    }
+
+    @include m.tablet {
+        height: 100%;
+        padding: 60px 0 140px 0;  
+        background-image: url(../../images/desktop/image-hero.jpg);
+    }
+
+
+    .logo__img {
+        max-width: 160px;
+        @include m.tablet {
+            max-width: 100%;
+        }
+    } 
+}
+
+.header__container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @include m.tablet {
+        z-index: 99;
+        display: block;
+    }
+}

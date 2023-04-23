@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header__title {
+    padding: 0;
+    @include m.tablet {
+        padding: 140px 0 0 0;
+        display: flex;
+        justify-content: center;    
+    }
+
+    @include m.desktop {
+        justify-content: flex-start;
+    }
+
+    .header__heading {
+        padding: 30px;
+        font-size: 38px;
+        line-height: 1;
+        text-transform: uppercase;
+        max-width: 650px;
+        border: 2px solid;
+        border-color: v.$white;
+        font-weight: 400;
+        font-family: v.$fontJosefin;
+        color: v.$white;
+        @include m.mobile {
+            font-size: 55px;
+        }
+        @include m.tablet {
+            padding: 35px 42px 25px;
+            font-size: 72px;
+        }
+    }
+}
